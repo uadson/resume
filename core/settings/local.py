@@ -1,26 +1,23 @@
 # 1. Imports
-import environ
+from decouple import config
+from decouple import Csv
 
 from .base import *
 
 
-env = environ.Env()
+SECRET_KEY = config('SECRET_KEY')
 
-environ.Env.read_env()
+DEBUG = config('DEBUG', cast=bool)
 
-SECRET_KEY = env('SECRET_KEY')
-
-DEBUG = env('DEBUG', cast=bool)
-
-ALLOWED_HOSTS = env("ALLOWED_HOSTS")
+ALLOWED_HOSTS = config("ALLOWED_HOSTS", cast=Csv())
 
 DATABASES = {
     "default": {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': env('DBNAME'),
-        'USER': env('DBUSER'),
-        'PASSWORD': env('DBPASSWORD'),
-        'HOST': env('DBHOST'),
+        'NAME': config('DBNAME'),
+        'USER': config('DBUSER'),
+        'PASSWORD': config('DBPASSWORD'),
+        'HOST': config('DBHOST'),
         'PORT': '',
     }
 }

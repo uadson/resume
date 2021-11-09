@@ -6,6 +6,6 @@ from .views import ResumeView
 app_name = 'resume'
 
 urlpatterns = [
-    #Home Page
+    # Home Page
     path('', ResumeView.as_view(), name='index'),
 ]

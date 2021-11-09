@@ -6,15 +6,22 @@
         <span class="text-primary">Feitosa</span>
     </h1>
     <div class="subheading mb-5">
-        Brazil - 
+        Brasil - 
         <a href="mailto:name@email.com">contato@uadsonfeitosa.com.br</a>
     </div>
-    <p class="lead mb-5">Experience in Python programming, developing web applications using the Django framework.
-        For the front-end I often use Bootstrap 4 or 5 in the applications I develop, as well as incipient Javascript knowledge for some specific events.
-        In my projects I use essential tools like Git for code versioning, GitHub for hosting project repositories. I use Linux as my main operating system, but without any difficulties with Windows. I have been gradually making use of the twelve-steps concept in my Django projects, aiming at structuring more and more professional in the way of development, as well as using the PostgreSQL database both for development and in production through the Heroku Server. I'm constantly looking for knowledge and better ways to present solutions.</p>
-    <div class="social-icons">
-        <a class="social-icon" href="https://www.linkedin.com/in/uadsonfeitosa"><i class="fab fa-linkedin-in"></i></a>
-        <a class="social-icon" href="https://www.github.com/uadson"><i class="fab fa-github"></i></a>
+    <p class="lead mb-5">Brasileiro, apaixonado por programação e novas tecnologias. 
+        Estou sempre aprendendo algo novo. 
+        Tenho satisfação em poder desenvolver soluções para os pobremas encontrados. 
+        Tento me atualizar sempre sobre novas tecnologias, lendo artigos, assistindo vídeos, 
+        ou fazendo cursos, trabalhando em projetos pessoais nas horas livres, 
+        o que me ajuda muito no aprendizado. 
+        Estou a procura de oportunidades e desafios os quais me farão crescer tanto 
+        pessoalmente quanto profissionalmente. 
+        Meu atual objetivo é engajar na área de desenvolvimento backend. 
+    </p>
+    <div class="dev-icons">
+        <a class="dev-icons" href="https://www.linkedin.com/in/uadsonfeitosa"><i class="devicon-linkedin-plain colored"></i></a>
+        <a class="dev-icons" href="https://www.github.com/uadson"><i class="devicon-github-original-wordmark colored"></i></a>
     </div>
 </div>
 </section>
@@ -22,14 +29,16 @@
 <!-- Experience-->
 <section class="resume-section" id="experience">
 <div class="resume-section-content">
-    <h2 class="mb-5">Experience</h2>
+    <h2 class="mb-5">Experiência</h2>
     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
         <div class="flex-grow-1">
-            <h3 class="mb-0"> Python Developer Junior </h3>
-            <div class="subheading mb-3"> ------ </div>
-            <p> So far I've developed small projects according to my level of knowledge. However, such projects have basic services such as a login screen, user registrations, products, means of interaction between the client and the company, as well as the concern to make a layout as intuitive as possible.</p>
+            <h3 class="mb-0"> Desenvolvedor Backend(Python/Django)</h3><br>
+            <div class="subheading mb-3">Projetos</div>
+            <ul class="fa-ul mb-0">
+                {% include '_projects.html' %}
+            </ul>
         </div>
-        <div class="flex-shrink-0"><span class="text-primary">Currently</span></div>
+        <div class="flex-shrink-0"><span class="text-primary"></span></div>
     </div>
 </div>
 </section>
@@ -37,11 +46,11 @@
 <!-- Education-->
 <section class="resume-section" id="education">
 <div class="resume-section-content">
-    <h2 class="mb-5">Education</h2>
+    <h2 class="mb-5">Educação</h2>
     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
         <div class="flex-grow-1">
             <h3 class="mb-0">Universidade Estácio de Sá</h3>
-            <div class="subheading mb-3">Technologist in Systems Analysis and Development</div>
+            <div class="subheading mb-3">Tecnologia em Análise e Desenvolvimento de Sistemas</div>
             <div></div>
             <p></p>
         </div>
@@ -54,7 +63,7 @@
 <section class="resume-section" id="skills">
 <div class="resume-section-content">
     <h2 class="mb-5">Skills</h2>
-    <div class="subheading mb-3">Programming Languages and Tools</div>
+    <div class="subheading mb-3">Linguagens de Programação e Ferramentas</div>
     <ul class="list-inline dev-icons">
         <li class="list-inline-item"><i class="devicon-python-plain"></i></li>
         <li class="list-inline-item"><i class="devicon-html5-plain colored"></i></li>
@@ -66,54 +75,30 @@
         <li class="list-inline-item"><i class="devicon-git-plain colored"></i></li>
         <li class="list-inline-item"><i class="devicon-heroku-plain colored"></i></li>
         <li class="list-inline-item"><i class="devicon-postgresql-plain colored"></i></li>
-        <li class="list-inline-item"><i class="devicon-linux-plain colored"></i></li>
-
-        <!--
-        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-        <li class="list-inline-item"><i class="fab fa-less"></i></li>
-        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-        -->
-    </ul>
-    <div class="subheading mb-3">Projects</div>
-    <ul class="fa-ul mb-0">
-        <li>
-            <span class="fa-li"><i class="fas fa-check"></i></span>
-            <a href="https://bit.ly/3DGqq0Z" target="_blank">Book Table - A virtual bookcase</a>
-        </li>
-        <li>
-            <span class="fa-li"><i class="fas fa-check"></i></span>
-            <a href="https://bit.ly/3BKij2M" target="_blank">A service to enable online legal advice.</a>
-        </li>
+        <li class="list-inline-item"><i class="devicon-ubuntu-plain-wordmark colored"></i></li>
     </ul>
 </div>
 </section>
 <hr class="m-0" />
-<!-- Interests-->
+<!-- Certificados -->
+<section class="resume-section" id="awards">
+    <div class="resume-section-content">
+        <h2 class="mb-5">Certificados</h2>
+        <ul class="fa-ul mb-0">
+            <li>
+                <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                Desenvolvimento para Internet e Banco de Dados com Python e Django - Digital Innovation One
+            </li>
+        </ul>
+    </div>
+</section>
+<hr class="m-0" />
+<!-- Interesses-->
 <section class="resume-section" id="interests">
 <div class="resume-section-content">
-    <h2 class="mb-5">Interests</h2>
+    <h2 class="mb-5">Interesses</h2>
     <p>I enjoy learning and passing on knowledge acquired. I like it even more when I can be useful in contributing in some way to a certain goal being achieved.</p>
 </div>
 </section>
 <hr class="m-0" />
-<!-- Awards-->
-<section class="resume-section" id="awards">
-<div class="resume-section-content">
-    <h2 class="mb-5">Awards</h2>
-    <ul class="fa-ul mb-0">
-        <li>
-            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-            Desenvolvimento para Internet e Banco de Dados com Python e Django - Digital Innovation One
-        </li>
-    </ul>
-</div>
 {% endblock %}
