@@ -23,6 +23,8 @@ class Main(models.Model):
 class Project(Main):
     title = models.CharField("Title", max_length=150)
     description = models.TextField("Description", blank=True)
+    responsabilities = models.TextField("Responsabilities", blank=True)
+    tools = models.TextField("Tools", blank=True)
     github_url = models.URLField("Github", max_length=200, blank=True)
     url = models.URLField("Page", max_length=200, blank=True)
 
