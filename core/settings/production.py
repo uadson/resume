@@ -1,13 +1,19 @@
-import dj_database_url
-
-from decouple import config, Csv
+import environ
 
 from .base import *
 
-SECRET_KEY = config("SECRET_KEY")
 
-DEBUG = config('DEBUG', cast=bool)
+env = environ.Env(
+    DEBUG = (bool, False)
+)
 
-ALLOWED_HOSTS = config("ALLOWED_HOSTS", cast=Csv())
+SECRET_KEY = env("SECRET_KEY")
 
-DATABASES['default'] = dj_database_url.config()
+DEBUG = env('DEBUG')
+
+ALLOWED_HOSTS = env("ALLOWED_HOSTS")
+
+DATABASES = {
+
+    "default": env.db(),
+}

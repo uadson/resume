@@ -13,7 +13,7 @@ sqlparse = "==0.4.1"
 whitenoise = "==5.2.0"
 Django = "==3.2.5"
 flake8 = "*"
-dj-database-url = "*"
+django-environ = "*"
 
 [dev-packages]
 

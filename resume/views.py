@@ -2,6 +2,7 @@ from django.views.generic import TemplateView
 
 from .models import Project
 
+
 class ResumeView(TemplateView):
     template_name = 'resume/index.html'
 
