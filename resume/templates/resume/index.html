@@ -1,99 +1,28 @@
 {% extends 'base.html'%}
 {% block content %}
-<div class="resume-section-content">
-    <h1 class="mb-0">
-        Uadson
-        <span class="text-primary">Feitosa</span>
-    </h1>
-    <div class="subheading mb-5">
-        Brasil - 
-        <a href="mailto:name@email.com">contato@uadsonfeitosa.com.br</a>
-    </div>
-    <p class="lead mb-5">Brasileiro, apaixonado por programação e novas tecnologias. 
-        Estou sempre aprendendo algo novo. 
-        Tenho satisfação em poder desenvolver soluções para os pobremas encontrados. 
-        Tento me atualizar sempre sobre novas tecnologias, lendo artigos, assistindo vídeos, 
-        ou fazendo cursos, trabalhando em projetos pessoais nas horas livres, 
-        o que me ajuda muito no aprendizado. 
-        Estou a procura de oportunidades e desafios os quais me farão crescer tanto 
-        pessoalmente quanto profissionalmente. 
-        Meu atual objetivo é engajar na área de desenvolvimento backend. 
-    </p>
-    <div class="dev-icons">
-        <a class="dev-icons" href="https://www.linkedin.com/in/uadsonfeitosa"><i class="devicon-linkedin-plain colored"></i></a>
-        <a class="dev-icons" href="https://www.github.com/uadson"><i class="devicon-github-original-wordmark colored"></i></a>
-    </div>
-</div>
-</section>
+
+<!-- About-->
+{% include '_about.html' %}
 <hr class="m-0" />
+
 <!-- Experience-->
-<section class="resume-section" id="experience">
-<div class="resume-section-content">
-    <h2 class="mb-5">Experiência</h2>
-    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-        <div class="flex-grow-1">
-            <h3 class="mb-0"> Desenvolvedor Backend(Python/Django)</h3><br>
-            <div class="subheading mb-3">Projetos</div>
-            <ul class="fa-ul mb-0">
-                {% include '_projects.html' %}
-            </ul>
-        </div>
-        <div class="flex-shrink-0"><span class="text-primary"></span></div>
-    </div>
-</div>
-</section>
+{% include '_experience.html' %}
 <hr class="m-0" />
+
 <!-- Education-->
-<section class="resume-section" id="education">
-<div class="resume-section-content">
-    <h2 class="mb-5">Educação</h2>
-    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-        <div class="flex-grow-1">
-            <h3 class="mb-0">Universidade Estácio de Sá</h3>
-            <div class="subheading mb-3">Tecnologia em Análise e Desenvolvimento de Sistemas</div>
-            <div></div>
-            <p></p>
-        </div>
-        <div class="flex-shrink-0"><span class="text-primary">2021</span></div>
-    </div>
-</div>
-</section>
+{% include '_education.html' %}
 <hr class="m-0" />
+
 <!-- Skills-->
-<section class="resume-section" id="skills">
-<div class="resume-section-content">
-    <h2 class="mb-5">Skills</h2>
-    <div class="subheading mb-3">Linguagens de Programação e Ferramentas</div>
-    <ul class="list-inline dev-icons">
-        <li class="list-inline-item"><i class="devicon-python-plain"></i></li>
-        <li class="list-inline-item"><i class="devicon-html5-plain colored"></i></li>
-        <li class="list-inline-item"><i class="devicon-css3-plain colored"></i></li>
-        <li class="list-inline-item"><i class="devicon-bootstrap-plain colored"></i></li>
-        <li class="list-inline-item"><i class="devicon-django-plain colored"></i></li>
-        <li class="list-inline-item"><i class="devicon-jupyter-plain colored"></i></li>
-        <li class="list-inline-item"><i class="devicon-bash-plain colored"></i></li>
-        <li class="list-inline-item"><i class="devicon-git-plain colored"></i></li>
-        <li class="list-inline-item"><i class="devicon-heroku-plain colored"></i></li>
-        <li class="list-inline-item"><i class="devicon-postgresql-plain colored"></i></li>
-        <li class="list-inline-item"><i class="devicon-ubuntu-plain-wordmark colored"></i></li>
-    </ul>
-</div>
-</section>
+{% include '_skills.html' %}
 <hr class="m-0" />
+
 <!-- Certificados -->
-<section class="resume-section" id="awards">
-    <div class="resume-section-content">
-        <h2 class="mb-5">Certificados</h2>
-        <ul class="fa-ul mb-0">
-            <li>
-                <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                Desenvolvimento para Internet e Banco de Dados com Python e Django - Digital Innovation One
-            </li>
-        </ul>
-    </div>
-</section>
+{% include '_certifies.html' %}
 <hr class="m-0" />
-<!-- Interesses-->
+
+<!-- Contato -->
+<!--
 <section class="resume-section" id="interests">
 <div class="resume-section-content">
     <h2 class="mb-5">Interesses</h2>
@@ -101,4 +30,5 @@
 </div>
 </section>
 <hr class="m-0" />
+-->
 {% endblock %}
