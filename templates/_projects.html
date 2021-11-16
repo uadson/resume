@@ -5,12 +5,10 @@
     <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
   </div>
   <div class="row">
-
     <!-- Projects item -->
     {% for project in projects %}
-    <div class="col-md-6 col-lg-4 col-xs-12">
- 
     <!-- Card -->
+    <div class="col-md-6 col-lg-4 col-xs-12">
     <div class="card" style="width: 18rem;">
         <div class="card-body">
             <h5 class="card-title">{{ project.title }}</h5><br>
@@ -32,6 +30,7 @@
         </div>
     </div><br>
     </div>
+    <!---->
     {% endfor %}
   </div>
 </div>
