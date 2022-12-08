@@ -321,7 +321,7 @@ li:before {
     width: 210px;
     height: 240px;
     margin: 10px;
-    background: url(/src/assets/images/eu.png) 100% /210px no-repeat;
+    /* background: url(/src/assets/images/eu.png) 100% /210px no-repeat; */
 }
 
 .hello_content,
